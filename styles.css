@@ -1,18 +1,18 @@
 body {
-    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0;
+    min-height: 100vh;
     padding: 0;
+    margin: 0;
 }
 
 ul {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 16px;
 }
 
 a {
@@ -26,53 +26,28 @@ h1 {
     margin: 0;
 }
 
-/* Header */
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: darkslategray;
-    color: white;
-    min-height: 60px;
-    width: 100%;
-}
-
-.header > ul {
-    display: flex;
-    gap: 10px;
-    padding-right: 20px
-}
-
 .logo {
-    padding-left: 20px;
     font-weight: 900;
 }
 
-/* Hero Module */
-
-.hero-module {
+.hero-module , .second-module {
+    flex: 1;
     display: flex;
     justify-content: center;
-    gap: 30px;
     align-items: center;
-    background-color: darkslategray;
-    color: white;
-    padding: 40px;
 }
 
-.hero-content {
+.header , .footer {
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 300px;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
 }
 
-.hero-content > p {
-    color: #E2E7EB;
-    font-size: 18px;
+.header {
+    background: darkslategray;
 }
 
-.hero-image {
-    width: 350px;
+.footer {
+    background: darkslategray;
 }
-
