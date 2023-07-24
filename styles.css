@@ -37,12 +37,11 @@ h2 {
     font-weight: 900;
 }
 
-.hero-module , .second-module, .third-module {
+.hero-module , .second-module, .third-module , .fourth-module {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*max-height: 500px; */
     min-height: 400px;
     padding-left: 200px;
     padding-right: 200px;
@@ -73,11 +72,44 @@ h2 {
     background: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
+    font-weight: 50;
 }
 
-.third-module > .quote-by {
+.fourth-module {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-container {
+    display: flex;
+    gap: 30px;
+    background: #3882f6;
+    padding: 30px 50px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-grow: 1;
+}
+
+.cta-content {
+    flex-grow: 1;
+}
+
+.cta-subtext {
+    font-size: 14px;
+}
+
+.quote {
+    display:flex;
+    flex-direction: column;
+}
+
+.quote > .quote-by {
     font-size: 16px;
     align-self: end;
+    font-weight: 800;
 }
 
 .card-container {
@@ -121,7 +153,11 @@ h2 {
     color: white;
     border: 0px;
     font-weight: 800;
-    
+}
+
+.sign-up.white-border {
+    border: 2px solid white;
+    max-height: 50px;
 }
 
 .header , .footer {
